@@ -184,11 +184,17 @@
     <section id="contact">
       <div class="body-container">
         <h2><span>contact</span></h2>
-        <form method="POST" action="https://formspree.io/f/xdopwovb">
-          <input type="text" name="name">
-          <input type="email" name="_replyto">
-          <input type="submit" value="Send">
-      </form>
+        <form class="waypoint animated pop-in" data-animation="pop-in" data-delay=".5s" id="contact-form" style="animation-delay: 0.5s;">
+          <input placeholder="Name" type="text" name="name" required="">
+          <input placeholder="Enter email" type="email" name="email" required="">
+          <textarea placeholder="Your Message" type="text" name="message"></textarea>
+          <div id="success">
+            <div>
+              Your message was sent successfully. Thanks!<span id="close" class="mdi mdi-close"></span>
+            </div>
+          </div>
+          <input class="button" type="submit" id="submit" value="SUBMIT">
+        </form>
     </section>
   </main>
   <footer class="flex">

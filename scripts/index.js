@@ -4,6 +4,19 @@ function onClickMenu(menu) {
 }
 
 
-$(function(){
-  $("#formContent").load("../html5-contact-form-send-email/formpage.html"); 
+$('#contact-form').submit(function(e) {
+  e.preventDefault();
+
+  $.ajax({
+    url: 'https://formspree.io/f/xdopwovb',
+    method: 'POST',
+    data: { message: $('form').serialize() },
+    dataType: 'json',
+    success: function(response) {
+      $('#success').addClass('expand');
+      $('#contact-form')
+        .find('input[type=text], input[type=email], textarea')
+        .val('');
+    }
+  });
 });
