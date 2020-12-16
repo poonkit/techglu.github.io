@@ -19,7 +19,8 @@ $validator->field('email')->isEmail();
 $validator->field('comments')->maxLength(6000);
 
 
-
+$mailer = $pp->getMailer();
+$mailer->setFrom('www.techglu.com','Form',false);
 
 $fh->sendEmailTo(['poojaa.todkar0594@gmail.com', 'poojavk21@gmail.com']);
 
