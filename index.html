@@ -184,7 +184,24 @@
     <section id="contact">
       <div class="body-container">
         <h2><span>contact</span></h2>
-        <div id="formContent"></div>
+        <form method="post" action="send_mail.php">
+          <p>
+            <label>First Name
+              <input type="text" name="first_name" required>
+            </label>
+          </p>
+          <p>
+            <label>Email
+              <input type="email" name="email_address">
+            </label>
+          </p>
+          <p>
+            <label>Comments
+              <textarea name="comments" maxlength="500"></textarea>
+            </label>
+          </p>
+          <p><button>Submit the form</button></p>
+        </form>
     </section>
   </main>
   <footer class="flex">
@@ -197,8 +214,8 @@
         <script>document.write(new Date().getFullYear())</script></span>
     </p>
     <div>
-      <a href="https://api.whatsapp.com/send?phone=918294535507&amp;text=I Want Project Details" target="_blank" class="whatsapp"><img
-          src="./assets/images/icon_whatsapp.png" alt="" class="img-responsive"></a>
+      <a href="https://api.whatsapp.com/send?phone=918294535507&amp;text=I Want Project Details" target="_blank"
+        class="whatsapp"><img src="./assets/images/icon_whatsapp.png" alt="" class="img-responsive"></a>
     </div>
   </footer>
 </body>
