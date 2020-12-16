@@ -184,14 +184,16 @@
     <section id="contact">
       <div class="body-container">
         <h2><span>contact</span></h2>
-        <form id="my-form" action="https://formspree.io/f/xdopwovb" method="POST">
-          <label>Email:</label>
+        <form id="contact-form" action="https://formspree.io/f/xdopwovb" method="POST">
+          <label><i class="fa fa-user" aria-hidden="true"></i>Name</label>
+          <input type="text" name="name" />
+          <label><i class="fa fa-envelope" aria-hidden="true"></i>Email</label>
           <input type="email" name="email" />
-          <label>Message:</label>
+          <label><i class="fa fa-comment" aria-hidden="true"></i>Message</label>
           <input type="text" name="message" />
-          <button id="my-form-button">Submit</button>
-          <p id="my-form-status"></p>
+          <button class="button" id="my-form-button">Submit</button>
         </form>
+        <p id="my-form-status"></p>
     </section>
   </main>
   <footer class="flex">
