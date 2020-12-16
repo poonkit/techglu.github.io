@@ -5,5 +5,5 @@ function onClickMenu(menu) {
 
 
 $(function(){
-  $("#formContent").load("../contact-form/fcf.form.htm"); 
+  $("#formContent").load("../html5-contact-form-send-email/formpage.html"); 
 });
