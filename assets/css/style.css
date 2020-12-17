@@ -209,7 +209,7 @@ header .mobile-nav-bar {
 }
 
 header .mobile-nav-bar a {
-  color: #1A65E9;
+  color: #1A65E9 !important;
 }
 
 header ul.dropdown-menu {
@@ -450,5 +450,9 @@ section#contact .typeform-widget .ebrHDR {
 
   main section .list li.list-item {
     width: 100%;
+  }
+
+  #contact-form {
+    width: 300px;
   }
 }
