@@ -1,3 +1,3 @@
 RewriteEngine On
-RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
-RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} !^www\.techglu\.com$ [NC]
+RewriteRule ^(.*)$ https://www.techglu.com [L,R=301,NC,NE]
