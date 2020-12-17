@@ -94,6 +94,16 @@ body {
   overflow-x: hidden;
   text-align: center;
 }
+
+a {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #1A65E9 !important;
+  text-decoration: none;
+}
   
 .button {
   box-sizing: inherit;
@@ -103,15 +113,20 @@ body {
   padding: 10px 20px;
   transition: all 0.5s;
   border: 2px solid #fff;
-  background: #CD2027;
+  background: #1A65E9;
   color: #fff;
   text-transform: uppercase;
 }
 
 .button:hover {
-  border: 2px solid #CD2027;
+  border: 2px solid #1A65E9;
   background: #fff;
-  color: #CD2027;
+  color: #1A65E9;
+}
+
+.button:hover a {
+  color: #1A65E9 !important;
+  text-decoration: none;
 }
 
 .button .mdi {
@@ -133,7 +148,7 @@ body {
 header {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   background: #fff;
-  color: #CD2027;
+  color: #1A65E9;
   position: fixed;
   left: 0;
   right: 0;
@@ -167,7 +182,7 @@ header ul li::after {
   height: 1px;
   content: '.';
   color: transparent;
-  background: #CD2027;
+  background: #1A65E9;
   visibility: none;
   opacity: 0;
   z-index: -1;
@@ -194,7 +209,7 @@ header .mobile-nav-bar {
 }
 
 header .mobile-nav-bar a {
-  color: #CD2027;
+  color: #1A65E9;
 }
 
 header ul.dropdown-menu {
@@ -203,7 +218,7 @@ header ul.dropdown-menu {
 }
 
 header ul.dropdown-menu li:hover {
-  background: #CD2027;
+  background: #1A65E9;
   color: #fff;
 }
 
@@ -213,13 +228,21 @@ header ul.dropdown-menu li {
 }
 
 main {
-  padding-top: 72px;
+  padding-top: 63px;
   margin-bottom: 70px;
 }
 
 main section {
   padding: 40px 0;
   border-bottom: 1px solid #ddd;
+  position: relative;
+}
+
+main section#about,
+main section#contact {
+  background: url('../images/background.jpeg') no-repeat center/cover;
+  color: #fff;
+  font-weight: 500;
 }
 
 main section h2 {
@@ -231,7 +254,7 @@ main section h2 {
 }
 
 main section h2 span {
-  border-bottom: 4px solid #CD2027;
+  border-bottom: 4px solid #1A65E9;
 }
 
 main section .description p {
@@ -250,8 +273,10 @@ main section .list li.list-item {
   width: 23.92%;
   height: 350px;
   margin: 0 15px 15px 0;
-  border: 1px solid #CD2027;
+  border: 1px solid #1A65E9;
   cursor: pointer;
+  background: #1A65E9;
+  color: #fff;
 }
 
 main section .list li.list-item .card {
@@ -268,8 +293,9 @@ main section .list li.list-item .card h3 {
 main section .list li.list-item .card p {
   width: 100%;
   padding: 10px;
-  background: #eee;
+  background: #cccc;
   font-size: 22px;
+  font-weight: 500;
 }
 
 main section .list li.list-item ul {
@@ -281,16 +307,32 @@ main section .list li.list-item ul li {
 }
 
 main section .list li.list-item:hover {
-  background: #CD2027;
-  color: #fff;
+  background: #fff;
+  color: #1A65E9;
 }
 
 main section .list li.list-item:hover .card p {
-  background: red;
+  background: #1A65E9;
+  color: #fff;
 }
 
 main section .list li.list-item:nth-child(4n) {
   margin-right: 0;
+}
+
+main section#work .card {
+  height: 100%;
+  padding: 20px;
+}
+
+main section#work .card h3 {
+  margin-bottom: 20px;
+}
+
+main section#work .card div {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 25px;
 }
 
 #contact-form {
@@ -336,11 +378,15 @@ footer {
   bottom: 0;
   background: #fff;
   box-shadow:inset 0 15px 5px -12px rgba(0,0,0,0.2);
-  color: #CD2027;
+  color: #1A65E9;
 }
 
 footer p {
   font-size: 14px;
+}
+
+footer .call img {
+  max-width: 50px;
 }
 
 section#contact .typeform-widget .ebrHDR {
